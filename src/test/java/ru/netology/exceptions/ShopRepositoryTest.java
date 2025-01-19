@@ -40,11 +40,6 @@ class ShopRepositoryTest {
         Assertions.assertThrows(NotFoundException.class, () -> {
             repo.remove(21);
         });
-
-//        Product[] actual = repo.findAll();
-//        Product[] expected = {product1, product2, product3};
-//
-//        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -76,7 +71,6 @@ class ShopRepositoryTest {
         Assertions.assertThrows(AlreadyExistsException.class, () -> {
             repo.add(product3);
         });
-
     }
 
 }
